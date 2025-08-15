@@ -5,7 +5,7 @@ module  TCalc(w, cal, g, met, T);
     output [8:0] T;
 
     wire [8:0] gOut;
-    wire [7:0] f1, f2; 
+    wire [7:0] f1, f2;
     FCalc fc(w, cal, f1);
     assign f2 = f1 + (f1>>3);
     assign gOut = g ? f2 : f1;
@@ -18,6 +18,6 @@ module  TCalc(w, cal, g, met, T);
     assign T = (met == 2'b00) ? m1 :
                   (met == 2'b01) ? m2 :
                   (met == 2'b10) ? m3 :
-                                   m4; 
+                                   m4;
 
 endmodule

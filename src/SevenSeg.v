@@ -18,20 +18,20 @@ module SevenSeg(Clk, Cn, Ti, seg_data, seg_sel);
 
     always @(*) begin
         case (digSel)
-            2'd0: begin 
-                seg_sel = 5'b00001; 
+            2'd0: begin
+                seg_sel = 5'b00001;
                 digit = digits[0];
             end
             2'd1: begin
-                seg_sel = 5'b00010; 
+                seg_sel = 5'b00010;
                 digit = digits[1];
             end
             2'd2: begin
-                seg_sel = 5'b00100; 
+                seg_sel = 5'b00100;
                 digit = digits[2];
             end
             2'd3: begin
-                seg_sel = 5'b01000; 
+                seg_sel = 5'b01000;
                 digit = digits[3];
             end
         endcase
