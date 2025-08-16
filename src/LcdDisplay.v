@@ -11,16 +11,16 @@ module LcdDisplay(clkLcd, Cn, Ti, WCn, lcd_rs, lcd_e, lcd_data);
     reg [127:0] exercise_text [0:9];
     reg [127:0] default_text;
     initial begin
-        exercise_text[0] = "Lunges, right leg";
-        exercise_text[1] = "Lunges, left leg ";
-        exercise_text[2] = "Push-Ups         ";
-        exercise_text[3] = "Squat Jumps      ";
-        exercise_text[4] = "Tricep Dips      ";
-        exercise_text[5] = "Mountain Climbers";
-        exercise_text[6] = "Plank Ladder     ";
-        exercise_text[7] = "Wall Sit Hold    ";
-        exercise_text[8] = "Plank Hold       ";
-        exercise_text[9] = "Burpees          ";
+        exercise_text[0] = "Lunges,right leg";
+        exercise_text[1] = "Lunges,left leg ";
+        exercise_text[2] = "    Push-Ups    ";
+        exercise_text[3] = "   SquatJumps   ";
+        exercise_text[4] = "   TricepDips   ";
+        exercise_text[5] = "MountainClimbers";
+        exercise_text[6] = "  Plank Ladder  ";
+        exercise_text[7] = "  WallSit Hold  ";
+        exercise_text[8] = "   Plank Hold   ";
+        exercise_text[9] = "     Burpees    ";
         default_text     = "----------------";
     end
 
